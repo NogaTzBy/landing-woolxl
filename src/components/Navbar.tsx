@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingBag } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -35,15 +36,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="flex flex-col leading-none">
-              <span className="font-serif text-2xl font-bold tracking-widest text-[#1c1c1c]">
-                WOOL
-              </span>
-              <span className="text-xs tracking-[0.4em] text-[#c9a96e] font-medium -mt-1">
-                XL
-              </span>
-            </div>
+          <a href="#inicio" className="flex items-center">
+            <Image
+              src="/logofavicon.jpg"
+              alt="WOOL XL"
+              width={36}
+              height={36}
+              className="rounded-full object-cover"
+              priority
+            />
           </a>
 
           {/* Desktop links */}

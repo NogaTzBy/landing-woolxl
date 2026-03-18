@@ -16,7 +16,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "WOOL XL — Moda que te representa",
   description:
-    "Boutique de indumentaria y accesorios en Buenos Aires. Nueva colección disponible.",
+    "Boutique de indumentaria y accesorios en Villa Carlos Paz, Córdoba. Nueva colección disponible.",
+  icons: {
+    icon: "/logofavicon.jpg",
+  },
 };
 
 export default function RootLayout({
